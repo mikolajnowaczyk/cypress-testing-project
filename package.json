@@ -1,0 +1,24 @@
+{
+  "name": "cypress-testing-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation"
+  ],
+  "author": "Mikolaj Nowaczyk",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.12.0",
+    "cypress-xpath": "^2.0.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
