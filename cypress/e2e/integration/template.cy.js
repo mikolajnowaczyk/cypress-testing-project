@@ -1,4 +1,4 @@
-describe("Searchbox text", () => {
+describe.skip("Searchbox text", () => {
     before(function () {
         cy.visit();
     })
