@@ -7,29 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:open:chrome:local": "cypress open --env version=local --e2e -b chrome",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:firefox": "cypress run --browser firefox",
-    "cy.run:electron": "cypress run --browser electron"
+    "cy:run:electron": "cypress run --browser electron"
   },
   "keywords": [
     "testing",
     "cypress",
-    "automation",
-    "BDD",
-    "Cucumber"
+    "automation"
   ],
   "author": "Mikolaj Nowaczyk",
   "license": "ISC",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^17.2.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^12.12.0",
-    "cypress-image-snapshot": "^4.0.1",
     "cypress-xpath": "^2.0.1",
     "prettier": "^2.8.8",
     "typescript": "^5.0.4"
-  },
-  "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }

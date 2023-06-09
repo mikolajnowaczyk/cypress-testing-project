@@ -1,9 +1,13 @@
 export default class BasePage {
-    static pause(ms) {
+    static visit(url: string){
+        cy.visit(url);        
+    }
+
+    static pause(ms: number) {
         cy.wait(ms)
     }
 
-    static logInfo(message) {
+    static logInfo(message: string) {
         cy.log(message)
     }
 

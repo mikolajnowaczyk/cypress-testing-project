@@ -3,11 +3,14 @@
         "allowJs": false,
         "baseUrl": "../node_modules",
         "moduleResolution": "node16",
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
         "types": [
-            "cypress"
+            "cypress", "node"
         ]
     },
     "include": [
         "**/*.*",
+        "**/*.ts"
     ]
 }

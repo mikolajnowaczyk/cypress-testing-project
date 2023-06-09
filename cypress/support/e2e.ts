@@ -19,3 +19,18 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath');
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      /**
+       * Custom command to select DOM element by data-cy attribute.
+       * @example cy.dataCy('greeting')
+       */
+      login(username: string, password: string): Chainable<JQuery<HTMLElement>>,
+      isHidden(selector: string): Chainable<JQuery<HTMLElement>>,
+      isVisible(selector: string): Chainable<JQuery<HTMLElement>>,
+      setResolution(size: Cypress.ViewportPreset|Array<number>): Chainable<JQuery<HTMLElement>>
+    }
+  }
+}

@@ -1,6 +1,6 @@
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
+// import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
 
-addMatchImageSnapshotCommand()
+// addMatchImageSnapshotCommand()
 
 Cypress.Commands.add('isVisible', selector => {
     cy.get(selector).should('be.visible')
@@ -18,9 +18,9 @@ Cypress.Commands.add('setResolution', size => {
     }
 })
 
-Cypress.Commands.add('login', (useername, password) => {
+Cypress.Commands.add('login', (username, password) => {
     cy.get('#login_form').should('be.visible')
-    cy.get('#user_login').type(useername)
+    cy.get('#user_login').type(username)
     cy.get('#user_password').type(password)
     cy.get('#user_remember_me').click()
     cy.contains('Sign in').click()
