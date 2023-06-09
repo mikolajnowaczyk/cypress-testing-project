@@ -3,7 +3,7 @@ export default class Navbar {
         cy.get('.brand').click()
     }
 
-    static search(text) {
+    static search(text: string) {
         cy.get('#searchTerm').type(`${text} {enter}`)
     }
     static displaySignInButton() {
