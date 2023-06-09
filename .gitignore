@@ -2,3 +2,4 @@ node_modules
 cypress/videos
 cypress/screenshots
 cypress/fixtures/user.json
+cypress/fixtures/user.json
